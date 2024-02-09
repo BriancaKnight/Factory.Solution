@@ -7,6 +7,20 @@
 
 <h3>Machine Name : @Model.MachineName</h3>
 
+@if (@Model.JoinEntities.Count == 0)
+{
+  <p>This Machine does not have any Engineers working on it.</p>
+}
+else 
+{
+  <h4>This Machines's current engineers:</h4>
+  <ul>
+  @foreach (EngineerMachine join in Model.JoinEntities)
+  {
+    <li>@join.Engineer.EngineerName</li>
+  }
+  </ul>
+}
 
 <button>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId})</button>
 <button>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId}) </button>
