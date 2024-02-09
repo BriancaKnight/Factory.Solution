@@ -1,4 +1,4 @@
-# Project Name
+# Dr. Sillystringz's Factory
 
 ### Short Project Description
 
