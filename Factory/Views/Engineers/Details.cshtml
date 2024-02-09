@@ -1,0 +1,13 @@
+@model Factory.Models.Engineer
+@using Factory.Models;
+@using System.Collections.Generic;
+
+
+<h2>Engineer Details</h2>
+
+<h3>Engineer Name : @Model.EngineerName</h3>
+
+
+<button>@Html.ActionLink("Edit Engineer", "Edit", new { id = Model.EngineerId})</button>
+<button>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId}) </button>
+<button>@Html.ActionLink("Back to engineer list", "Index")</button>
