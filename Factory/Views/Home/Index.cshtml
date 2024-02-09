@@ -1,0 +1,36 @@
+@using Factory.Models;
+
+<div class="card">
+<h2>Engineers</h2>
+<hr />
+@if (Model["engineers"].Length == 0)
+{
+  <p>No engineers have been added yet!</p>
+}
+<ul>
+@foreach (Engineer engineer in Model["engineers"])
+{
+  <li>@Html.ActionLink(@engineer.EngineerName, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
+}
+</ul>
+</div>
+
+<hr />
+
+<div class="card">
+<h2>Machines</h2>
+<hr />
+@if (Model["machines"].Length == 0)
+{
+  <p>No machines have been added yet!</p>
+}
+<ul>
+@foreach (Machine machine in Model["machines"])
+{
+  <li>@Html.ActionLink(@machine.MachineName, "Details", "Machines", new { id = @machine.MachineId})</li>
+}
+</ul>
+</div>
+
+<button>@Html.ActionLink("Engineer List", "Index", "Engineers")</button>
+<button>@Html.ActionLink("Machine List", "Index", "Machines")</button>
