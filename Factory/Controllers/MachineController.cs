@@ -65,9 +65,16 @@ namespace Factory.Controllers
     [HttpPost]
     public ActionResult Edit(Machine machine)
     {
+      if (!ModelState.IsValid)
+      {
+        return View(machine);
+      }
+      else
+      {
       _db.Machines.Update(machine);
       _db.SaveChanges();
       return RedirectToAction("Index");
+      }
     }
 
     public ActionResult Delete(int id)
