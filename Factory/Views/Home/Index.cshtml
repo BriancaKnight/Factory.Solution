@@ -5,12 +5,12 @@
 <h2>Engineers</h2>
 @if (Model["engineers"].Length == 0)
 {
-  <p>No engineers have been added yet!</p>
+  <p style="text-align: center;">No engineers have been added yet!</p>
 }
 <ul>
 @foreach (Engineer engineer in Model["engineers"])
 {
-  <li>@Html.ActionLink(@engineer.EngineerName, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
+  <li style="text-align: center;">@Html.ActionLink(@engineer.EngineerName, "Details", "Engineers", new { id = @engineer.EngineerId})</li>
 }
 </ul>
 </div>
@@ -22,12 +22,12 @@
 <h2>Machines</h2>
 @if (Model["machines"].Length == 0)
 {
-  <p>No machines have been added yet!</p>
+  <p style="text-align: center;">No machines have been added yet!</p>
 }
 <ul>
 @foreach (Machine machine in Model["machines"])
 {
-  <li>@Html.ActionLink(@machine.MachineName, "Details", "Machines", new { id = @machine.MachineId})</li>
+  <li style="text-align: center;">@Html.ActionLink(@machine.MachineName, "Details", "Machines", new { id = @machine.MachineId})</li>
 }
 </ul>
 </div>
