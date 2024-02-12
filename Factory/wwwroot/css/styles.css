@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('./../img/Silly.png');
+  padding: 15px;
+  background-size: cover;
+}
+
+body {
+  color: rgb(79, 14, 14);
+  font-family: 'Luckiest Guy';
+  background-color: rgba(255, 205, 176, 0.874);
+}
+
+#header-navigation {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+  margin-left: auto; 
+}
+
+button {
+  --mask:
+    radial-gradient(16.98px at 50% 23.40px, #000 99%, #0000 101%) calc(50% - 18px) 0/36px 51% repeat-x,
+    radial-gradient(16.98px at 50% -14.4px, #0000 99%, #000 101%) 50% 9px/36px calc(51% - 9px) repeat-x,
+    radial-gradient(16.98px at 50% calc(100% - 23.40px), #000 99%, #0000 101%) calc(50% - 18px) 100%/36px 51% repeat-x,
+    radial-gradient(16.98px at 50% calc(100% + 14.40px), #0000 99%, #000 101%) 50% calc(100% - 9px)/36px calc(51% - 9px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  background-color: rgb(255, 140, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px; 
+  box-sizing: border-box; 
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(88, 20, 20);
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.card {
+  background-color: rgba(251, 175, 143, 0.783);
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
