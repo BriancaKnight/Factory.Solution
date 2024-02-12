@@ -2,7 +2,8 @@
 @model Factory.Models.Engineer
 
 <h2>Edit Engineer</h2>
-
+<br>
+<div class="list">
 <h4>Edit @Model.EngineerName</h4>
 
 <p>@Html.ValidationMessageFor(model => model.EngineerName, "", new { @class = "text-danger", @style = "font-weight: 600;" })</p>
@@ -16,6 +17,8 @@
 
   <input type="submit" value="Save" />
 }
+</div>
+<br>
 
 <div class="view-nav">
 <button>@Html.ActionLink("Back to Engineer list", "Index")</button>

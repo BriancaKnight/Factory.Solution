@@ -5,6 +5,8 @@
 
 <h2>Machine Details</h2>
 
+<br>
+<div class="list">
 <h3>Machine Name : @Model.MachineName</h3>
 
 @if (@Model.JoinEntities.Count == 0)
@@ -27,6 +29,9 @@ else
   }
   </ul>
 }
+
+</div>
+<br>
 
 <div class="view-nav">
 <button>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId})</button>

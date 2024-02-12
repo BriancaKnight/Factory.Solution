@@ -1,13 +1,16 @@
 @model Factory.Models.Engineer
 
 <h2>Are you sure you want to delete @Model.EngineerName?<h2>
-
+<br>
 <h4>
 @using (Html.BeginForm())
 {
+    <div style="text-align: center;">
     <input type="submit" value="Delete" />
+    </div>
 }
-
+<br>
+<br>
 <div class="view-nav">
 <button>@Html.ActionLink("Back to Engineer List", "Index")</button>
 </h4>

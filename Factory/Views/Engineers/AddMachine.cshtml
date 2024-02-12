@@ -2,7 +2,8 @@
 @model Factory.Models.Engineer
 
 <h2>Add a machine to @Model.EngineerName</h2>
-
+<br>
+<div class="list">
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.EngineerId)
@@ -12,6 +13,8 @@
 
     <input type="submit" value="Save" />
 }
+</div>
+<br>
 
 <div class="view-nav">
 <button>@Html.ActionLink("Back to Engineer list", "Index")</button>

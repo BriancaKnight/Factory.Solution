@@ -2,6 +2,8 @@
 @model Factory.Models.Machine
 
 <h2>Add a show to @Model.MachineName</h2>
+<br>
+<div class="list">
 
 @using (Html.BeginForm())
 {
@@ -12,6 +14,8 @@
 
     <input type="submit" value="Save" />
 }
+</div>
+<br>
 
 <div class="view-nav">
 <button>@Html.ActionLink("Back to Machine list", "Index")</button>
