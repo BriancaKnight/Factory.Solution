@@ -28,7 +28,9 @@ else
   </ul>
 }
 
+<div class="view-nav">
 <button>@Html.ActionLink("Edit Machine", "Edit", new { id = Model.MachineId})</button>
 <button>@Html.ActionLink("Delete Machine", "Delete", new { id = Model.MachineId}) </button>
 <button>@Html.ActionLink("Back to Machine list", "Index")</button>
 <button>@Html.ActionLink("Add Engineer for this Machine", "AddEngineer", new { id = Model.MachineId})</button>
+</div>
