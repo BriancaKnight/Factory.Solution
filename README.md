@@ -1,6 +1,6 @@
 # Dr. Sillystringz's Factory
 
-### Short Project Description
+### An app with many-to-many relationships
 
 #### By Brianca Knight
 
@@ -15,17 +15,13 @@
 
 ## Description
 
-This is a longer description of the application.
-
-Here is a diagram of the schema structure:
-
-![Add Schema Diagram](diagram.png)
+An managerial app that organizes engineers and machines in many-to-many relationships. Allows users to add engineers to machines and vice versa. 
 
 ## Setup/Installation Requirements
 
-* Clone this repo from `https://github.com/BriancaKnight/ProjectName.Solution`.
+* Clone this repo from `https://github.com/BriancaKnight/Factory`.
 
-* In the production sub directory (named `ProjectName`) create a file named `appsettings.json` and add the following code to it:
+* In the production sub directory (named `Factory`) create a file named `appsettings.json` and add the following code to it:
 
  ```json
     {
